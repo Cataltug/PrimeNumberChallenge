@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Prime Numbers</title>
+</head>
+<body>
+    <h1>Find Prime Numbers
+        <script>
+            function Prime(n){
+                if( n === 1 ) return false;
+                if( n === 2 ) return true;
+                for(let i = 2; i < n; i++){
+                    if(n % i === 0){
+                        return false;
+                    }
+                }
+            return true;
+            }
+
+            function findClosestPrime(n){
+                let smaller = n - 1;
+                while(true){
+                    if(Prime(smaller)){
+                        break;
+                    }
+                    smaller--;
+                }
+
+                let larger = n + 1;
+                while(true){
+                    if(Prime(larger)){
+                        break;
+                    }
+                    larger++;
+                }
+
+                let closest;
+                if (n - smaller <= larger - n) {
+                    closest = smaller;
+                } else {
+                    closest = larger;
+                }
+
+                return {closest, smaller, larger, Toplamları: smaller + larger }
+            }
+            
+            console.log(findClosestPrime(543));
+            console.log(findClosestPrime(50));
+            console.log(findClosestPrime(100));
+        </script>
+    </h1>
+</body>
+</html>
