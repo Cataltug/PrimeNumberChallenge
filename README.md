@@ -1,21 +1,21 @@
-
 🧠 Challenge: Find Prime Numbers
-Asal sayilar yalnizca kendilerine ve 1'e tam bolunen pozitif sayilardir.
 
-a. Parametre olarak verilen sayiya en yakin asal sayiyi bulan bir fonksiyon yazin. 
+Prime numbers are positive numbers that are divisible only by themselves and 1.
 
-Ornegin fonksiyonunuza 100 sayisi arguman olarak verildiginde sonuc olarak 97 sayisi return edilmeli.
+a. Write a function that finds the closest prime number to a given number.
 
-Input: 100 -> Output: 97 
+For example, when you pass the number 100 as an argument to your function, the result should be 97.
 
-a1. (Extra Challenge 💪) Fonksiyonunuzu 100'den büyük olan sayıları da destekleyecek şekilde düzenleyin.
+Input: 100 -> Output: 97
 
-b. Parametre olarak verilen sayidan buyuk olan ilk asal sayinin ve kucuk olan ilk asal sayinin toplamini bulan bir fonksiyon yazin.
+a1. (Extra Challenge 💪) Modify your function to support numbers greater than 100 as well.
+
+b. Write a function that calculates the sum of the first prime number greater than the given number and the first prime number smaller than the given number.
 
 Input: 100
 
-  -> 100'den kucuk ilk asal sayi: 97
+-> First prime number smaller than 100: 97
 
-  -> 100'den buyuk ilk asal sayi: 101
+-> First prime number greater than 100: 101
 
 Output: 101 + 97
